@@ -12,6 +12,10 @@ public class AgentRenderer : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+
+    /*
+     * FaceDirection called from AgentInputController's OnPointerPositionChange event
+     * */
     public void FaceDirection(Vector2 pointerPosition)
     {
         var direction = (Vector3)pointerPosition - transform.position;

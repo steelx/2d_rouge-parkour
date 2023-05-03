@@ -12,11 +12,14 @@ public class AgentAnimations : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void SetMovementAnimation(bool isWalking)
+    private void SetMovementAnimation(bool isWalking)
     {
         animator.SetBool("walking", isWalking);
     }
 
+    /*
+     * AnimateAgent called from AgentInputController's OnVelocityChange event
+     */
     public void AnimateAgent(float velocity)
     {
         SetMovementAnimation(velocity > 0);

@@ -68,6 +68,7 @@ public class AgentInputController : MonoBehaviour
     void GetPointerPosition()
     {
         Vector2 pointerPosition = lookAction.ReadValue<Vector2>();
+        // fix for screen space vs world space ;pointerPosition.z = mainCamera.nearClipPlane;
         Vector2 mousePointerWorldPosition = mainCamera.ScreenToWorldPoint(pointerPosition);
         OnPointerPositionChange?.Invoke(mousePointerWorldPosition);
     }
