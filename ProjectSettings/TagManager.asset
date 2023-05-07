@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 3578895861
+    locked: 0
+  - name: Background
+    uniqueID: 4200709565
+    locked: 0
+  - name: BG Elements
+    uniqueID: 2032447569
+    locked: 0
+  - name: Agents
+    uniqueID: 3166896613
+    locked: 0
+  - name: Foreground
+    uniqueID: 928487297
+    locked: 0
+  - name: Colisions
+    uniqueID: 2242972089
+    locked: 0
